@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Results from '../Results/Results';
-import { questions, shuffleArray } from '../Questions/Questions'; // Correct way to import named exports
+import React, { useState } from "react";
+import { questions, shuffleArray } from "../Questions/Questions"; // Correct way to import named exports
+import Results from "../Results/Results";
 
 const BibleQuiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -33,7 +33,7 @@ const BibleQuiz = () => {
     setPassedQuestions([]);
 
     // Shuffle the answer options for each question again
-    questions.forEach(question => {
+    questions.forEach((question) => {
       question.answerOptions = shuffleArray(question.answerOptions);
     });
   };
@@ -49,26 +49,40 @@ const BibleQuiz = () => {
             passedQuestions={passedQuestions}
           />
           <div className="button-container">
-          <button onClick={handleReplay} className="replay-button">Replay Quiz</button>
-        </div>
-          
+            <button onClick={handleReplay} className="replay-button">
+              Replay Quiz
+            </button>
+          </div>
         </div>
       ) : (
         <>
           <div className="question-section">
-            <div className="question-count">
-              <span>Question {currentQuestion + 1}</span>/{questions.length}
+            <div className="question-count-container">
+              <span className="question-count">
+                Question {currentQuestion + 1}
+              </span>
+              /{questions.length}
             </div>
+
             <div className="question-text">
               {questions[currentQuestion].questionText}
             </div>
-          </div>
-          <div className="answer-section">
-            {questions[currentQuestion].answerOptions.map((option, index) => (
-              <button key={index} onClick={() => handleAnswerClick(option.isCorrect, questions[currentQuestion])}>
-                {option.answerText}
-              </button>
-            ))}
+
+            <div className="answer-section">
+              {questions[currentQuestion].answerOptions.map((option, index) => (
+                <button
+                  key={index}
+                  onClick={() =>
+                    handleAnswerClick(
+                      option.isCorrect,
+                      questions[currentQuestion]
+                    )
+                  }
+                >
+                  {option.answerText}
+                </button>
+              ))}
+            </div>
           </div>
         </>
       )}

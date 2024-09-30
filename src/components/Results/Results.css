@@ -28,14 +28,21 @@
   background-color: #45a049;
 }
 
-.question-details {
-  margin-top: 15px;
-  text-align: left;
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+.question-details-container {
+  display: flex;              /* Use flexbox for centering */
+  justify-content: center;    /* Center horizontally */
+  margin-top: 15px;          /* Space above */
 }
+
+.question-details {
+  text-align: center;          /* Text alignment within the box */
+  border: 1px solid #469c3a; /* Border style */
+  padding: 10px;             /* Inner padding */
+  border-radius: 5px;        /* Rounded corners */
+  background-color: #d5f5d1; /* Background color */
+  width: 98.3%;                /* Set a width to limit its size */
+}
+
 
 strong {
   color: #4CAF50;

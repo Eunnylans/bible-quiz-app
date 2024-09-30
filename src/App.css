@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh; /* Full viewport height */
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,6 +24,18 @@ body {
   margin-bottom: 20px;
 }
 
+.question-count-container {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  margin-bottom: 10px; /* Space between question count and question text */
+}
+
+.question-count {
+  font-size: 18px; /* Optional: adjust font size */
+  font-weight: bold; /* Optional: make the font bold */
+}
+
+
 .answer-section button {
   display: block;
   background-color: #4CAF50;
@@ -41,6 +54,45 @@ body {
 .answer-section button:hover {
   background-color: #45a049;
 }
+
+
+
+.question-section {
+  display: flex;               /* Use flexbox for layout */
+  flex-direction: column;      /* Stack items vertically */
+  align-items: center;         /* Center items horizontally */
+  text-align: center;          /* Center text within items */
+  margin-bottom: 20px;        /* Space between questions */
+}
+
+.question-text {
+  margin: 20px 0;             /* Space above and below the question text */
+}
+
+.answer-section {
+  display: flex;               /* Flexbox for the answer section */
+  flex-direction: column;      /* Stack buttons vertically */
+  align-items: center;         /* Center buttons horizontally */
+  width: 100%;                 /* Full width for buttons */
+}
+
+.answer-section button {
+  display: block;              /* Make buttons block elements */
+  background-color: #4CAF50;  /* Button background color */
+  color: white;                /* Button text color */
+  border: none;                /* Remove border */
+  padding: 10px;               /* Padding inside buttons */
+  margin: 5px 0;              /* Space between buttons */
+  font-size: 16px;             /* Font size */
+  cursor: pointer;             /* Pointer on hover */
+  width: auto;                  /* Set a width for the buttons */
+  border-radius: 5px;         /* Rounded corners */
+}
+
+.answer-section button:hover {
+  background-color: #45a049;   /* Hover background color */
+}
+
 
 .score-section {
   font-size: 24px;

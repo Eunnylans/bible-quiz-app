@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
-import './Results.css';
+import React, { useState } from "react";
+import "./Results.css";
 
-
-
-const Results = ({ score, totalQuestions, failedQuestions, passedQuestions }) => {
+const Results = ({
+  score,
+  totalQuestions,
+  failedQuestions,
+  passedQuestions,
+}) => {
   const [selectedQuestion, setSelectedQuestion] = useState(null);
 
   const handleButtonClick = (question) => {
@@ -12,12 +15,15 @@ const Results = ({ score, totalQuestions, failedQuestions, passedQuestions }) =>
   };
 
   const renderQuestionDetails = (question) => {
-    const correctAnswer = question.answerOptions.find(option => option.isCorrect);
+    const correctAnswer = question.answerOptions.find(
+      (option) => option.isCorrect
+    );
     return (
       <div>
         <strong>Question:</strong> {question.questionText}
         <br />
-        <strong>Correct Answer:</strong> {correctAnswer ? correctAnswer.answerText : 'No correct answer'}
+        <strong>Correct Answer:</strong>{" "}
+        {correctAnswer ? correctAnswer.answerText : "No correct answer"}
       </div>
     );
   };
@@ -25,14 +31,20 @@ const Results = ({ score, totalQuestions, failedQuestions, passedQuestions }) =>
   return (
     <div className="results-container">
       <h2>Quiz Results</h2>
-      <p>You scored {score} out of {totalQuestions}</p>
+      <p>
+        You scored {score} out of {totalQuestions}
+      </p>
 
       <div className="results-section">
         <h3>Passed Questions</h3>
         {passedQuestions.length > 0 ? (
           passedQuestions.map((question, index) => (
-            <button key={index} onClick={() => handleButtonClick(question)} className="result-button">
-              Question {index + 1}
+            <button
+              key={index}
+              onClick={() => handleButtonClick(question)}
+              className="result-button"
+            >
+              Q {index + 1}
             </button>
           ))
         ) : (
@@ -50,8 +62,12 @@ const Results = ({ score, totalQuestions, failedQuestions, passedQuestions }) =>
         <h3>Failed Questions</h3>
         {failedQuestions.length > 0 ? (
           failedQuestions.map((question, index) => (
-            <button key={index} onClick={() => handleButtonClick(question)} className="result-button">
-              Question {index + 1}
+            <button
+              key={index}
+              onClick={() => handleButtonClick(question)}
+              className="result-button"
+            >
+              Q {index + 1}
             </button>
           ))
         ) : (
@@ -59,8 +75,12 @@ const Results = ({ score, totalQuestions, failedQuestions, passedQuestions }) =>
         )}
 
         {selectedQuestion && failedQuestions.includes(selectedQuestion) && (
-          <div className="question-details">
+          <div className="question-details-container">
+            {" "}
+            {/* New container for centering */}
+            <div className="question-details">
             {renderQuestionDetails(selectedQuestion)}
+          </div>
           </div>
         )}
       </div>
