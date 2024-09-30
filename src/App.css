@@ -1,38 +1,48 @@
+/* Apply background color to the entire page */
+body {
+  background-color: #d5f5d1; /* Light grayish-blue background */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.quiz-container {
+  display: inline-block;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.question-section {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.answer-section button {
+  display: block;
+  background-color: #4CAF50;
   color: white;
+  border: 2px solid #3E8E41; /* Border line and color */
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%; /* Makes the button wide and consistent */
+  max-width: 300px; /* Limit the max width */
+  height: 50px; /* Ensures all buttons have the same height */
+  border-radius: 10px; /* Rounds the corners */
 }
 
-.App-link {
-  color: #61dafb;
+.answer-section button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.score-section {
+  font-size: 24px;
+  color: #333;
 }
