@@ -36,7 +36,7 @@
 
 .question-details {
   text-align: center;          /* Text alignment within the box */
-  border: 1px solid #469c3a; /* Border style */
+ /* border: 1px solid #469c3a;  Border style */
   padding: 10px;             /* Inner padding */
   border-radius: 5px;        /* Rounded corners */
   background-color: #d5f5d1; /* Background color */

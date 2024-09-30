@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh; /* Full viewport height */
-  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +12,7 @@ body {
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
+  width: auto;
 }
 
 .quiz-container {
@@ -40,7 +40,7 @@ body {
   display: block;
   background-color: #4CAF50;
   color: white;
-  border: 2px solid #3E8E41; /* Border line and color */
+  /* border: 2px solid #3E8E41; Border line and color */
   padding: 10px;
   margin: 5px 0;
   font-size: 16px;

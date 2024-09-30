@@ -50,7 +50,7 @@ const BibleQuiz = () => {
           />
           <div className="button-container">
             <button onClick={handleReplay} className="replay-button">
-              Replay Quiz
+            Retry Quiz
             </button>
           </div>
         </div>
