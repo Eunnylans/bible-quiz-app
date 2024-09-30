@@ -46,3 +46,26 @@ body {
   font-size: 24px;
   color: #333;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-top: 20px; /* Add margin to separate from other content */
+}
+
+.replay-button {
+  display: inline-block;
+  background-color: #105f14;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.replay-button:hover {
+  background-color: #2d9a41;
+}
+
