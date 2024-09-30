@@ -1,0 +1,42 @@
+.results-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.results-section {
+  margin: 20px 0;
+}
+
+.results-section h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.result-button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.result-button:hover {
+  background-color: #45a049;
+}
+
+.question-details {
+  margin-top: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+strong {
+  color: #4CAF50;
+}
