@@ -1,5 +1,5 @@
 // src/Questions.js
-
+// Function to shuffle an array
 const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -8,7 +8,8 @@ const shuffleArray = (array) => {
     return array;
   };
   
-  const questions = [
+  // Questions with shuffled answer options
+  const questions = shuffleArray([
     {
       questionText: 'What was the first miracle Jesus performed?',
       answerOptions: shuffleArray([
@@ -309,7 +310,7 @@ const shuffleArray = (array) => {
         { answerText: '5', isCorrect: false },
       ]),
     },
-  ];
+  ]);
   
   export { shuffleArray, questions };
   
