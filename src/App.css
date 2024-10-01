@@ -1,6 +1,7 @@
 /* Apply background color to the entire page */
 body {
   background-color: #d5f5d1; /* Light grayish-blue background */
+  overflow: hidden;
   margin: 0;
   padding: 0;
   height: 100vh; /* Full viewport height */
@@ -35,10 +36,9 @@ body {
   font-weight: bold; /* Optional: make the font bold */
 }
 
-
 .answer-section button {
   display: block;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   /* border: 2px solid #3E8E41; Border line and color */
   padding: 10px;
@@ -55,49 +55,47 @@ body {
   background-color: #45a049;
 }
 
-
-
 .question-section {
-  display: flex;               /* Use flexbox for layout */
-  flex-direction: column;      /* Stack items vertically */
-  align-items: center;         /* Center items horizontally */
-  text-align: center;          /* Center text within items */
-  margin-bottom: 20px;        /* Space between questions */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text within items */
+  margin-bottom: 20px; /* Space between questions */
 }
 
 .question-text {
-  margin: 20px 0;             /* Space above and below the question text */
+  margin: 20px 0; /* Space above and below the question text */
 }
 
 .answer-section {
-  display: flex;               /* Flexbox for the answer section */
-  flex-direction: column;      /* Stack buttons vertically */
-  align-items: center;         /* Center buttons horizontally */
-  width: 100%;                 /* Full width for buttons */
+  display: flex; /* Flexbox for the answer section */
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center buttons horizontally */
+  width: 100%; /* Full width for buttons */
 }
 
 .answer-section button {
-  display: block;              /* Make buttons block elements */
-  background-color: #4CAF50;  /* Button background color */
-  color: white;                /* Button text color */
-  border: none;                /* Remove border */
-  padding: 10px;               /* Padding inside buttons */
-  margin: 5px 0;              /* Space between buttons */
-  font-size: 16px;             /* Font size */
-  cursor: pointer;             /* Pointer on hover */
-  width: auto;                  /* Set a width for the buttons */
-  border-radius: 5px;         /* Rounded corners */
+  display: block; /* Make buttons block elements */
+  background-color: #4caf50; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  padding: 10px; /* Padding inside buttons */
+  margin: 5px 0; /* Space between buttons */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer on hover */
+  width: auto; /* Set a width for the buttons */
+  border-radius: 5px; /* Rounded corners */
 }
 
 .answer-section button:hover {
-  background-color: #45a049;   /* Hover background color */
+  background-color: #45a049; /* Hover background color */
 }
 
 .answer-section button {
   display: block;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
-  border: 2px solid #3E8E41; /*Border line and color */
+  border: 2px solid #3e8e41; /*Border line and color */
   padding: 10px;
   margin: 5px 0;
   font-size: 16px;
@@ -111,7 +109,6 @@ body {
 .answer-section button:hover {
   background-color: #45a049;
 }
-
 
 .score-section {
   font-size: 24px;
@@ -135,8 +132,6 @@ body {
   border-radius: 5px;
 }
 
-
 .replay-button:hover {
   background-color: #2d9a41;
 }
-
