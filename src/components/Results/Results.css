@@ -14,10 +14,10 @@
 
 .result-button {
   display: inline-block;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
-  padding: 10px 10px;
+  padding: 8px 8px;
   margin: 5px;
   font-size: 0.7rem;
   cursor: pointer;
@@ -29,21 +29,20 @@
 }
 
 .question-details-container {
-  display: flex;              /* Use flexbox for centering */
-  justify-content: center;    /* Center horizontally */
-  margin-top: 15px;          /* Space above */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  margin-top: 15px; /* Space above */
 }
 
 .question-details {
-  text-align: center;          /* Text alignment within the box */
- /* border: 1px solid #469c3a;  Border style */
-  padding: 10px;             /* Inner padding */
-  border-radius: 5px;        /* Rounded corners */
+  text-align: center; /* Text alignment within the box */
+  /* border: 1px solid #469c3a;  Border style */
+  padding: 10px; /* Inner padding */
+  border-radius: 5px; /* Rounded corners */
   background-color: #d5f5d1; /* Background color */
-  width: 98.3%;                /* Set a width to limit its size */
+  width: 98.3%; /* Set a width to limit its size */
 }
 
-
 strong {
-  color: #4CAF50;
+  color: #4caf50;
 }
